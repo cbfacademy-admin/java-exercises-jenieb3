@@ -116,7 +116,7 @@ Then, in the `App::main` method, write code that creates a map as follows:
 
 **<ins>Example</ins>**
 
-For the following list of file names: `List.of("App.java", "App.txt", null, "App.md")`, the program should create 
+For the following list of file names: `Arrays.asList("App.java", "App.txt", null, "App.md")`, the program should create 
 a map with the following entries
 
 ```txt
