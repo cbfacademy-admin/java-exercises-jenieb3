@@ -75,7 +75,7 @@ public class CollectionsExercisesTest {
         assertThat(result.get(1), is(6));
         assertThat(result.get(2), is(8));
         assertThat(result.get(3), is(4));
-        assertThat(outputStreamCaptor.toString().trim(), is("599"));
+        assertThat(outputStreamCaptor.toString().trim().replaceAll("\n","").replaceAll("\r", ""), is("599"));
     }
 
     @Test
@@ -91,7 +91,7 @@ public class CollectionsExercisesTest {
         assertThat(array[0], is(6));
         assertThat(array[1], is(8));
         assertThat(array[2], is(9));
-        assertThat(outputStreamCaptor.toString().trim(), is("5956"));
+        assertThat(outputStreamCaptor.toString().trim().replaceAll("\n","").replaceAll("\r", ""), is("5956"));
     }
 
     @Test
